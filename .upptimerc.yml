@@ -9,7 +9,7 @@ sites:
   - name: GM GlobalConnect
     url: https://www.autopartners.net/gmentsso/UI/Login
   - name: FMCDealer
-    url: https://www.fmcdealer.dealerconnection.com
+    url: https://fmcdealer.dealerconnection.com
   - name: Broken Site
     url: https://thissitedoesnotexist.com
   - name: Test for HEAD
