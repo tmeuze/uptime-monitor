@@ -15,8 +15,19 @@ sites:
   - name: Test for HEAD
     method: HEAD
     url: https://www.google.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Authy
+    method: GET
+    url: https://gpkpyklzq55q.statuspage.io/api/v2/summary.json
+    headers:
+      - "Content-Type=application/json"
+    body: '("name":"Authy 2FA","status":"operational")'
+  - name: Authy 2
+    method: GET
+    url: https://gpkpyklzq55q.statuspage.io/api/v2/summary.json
+    headers:
+      - "Content-Type=application/json"
+    expectedStatusCodes: 
+      - '("name":"Authy 2FA","status":"operational")'
 
 status-website:
   # Add your custom domain below, or remove the next line if you don't have a domain
